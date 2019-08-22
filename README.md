@@ -7,7 +7,7 @@ In this project, I'm going to extract the pagila data, transform to star schema 
 
 ## Create a database
 
-<img src="./img/pagila-3nf.png" alt="pagila-3nf" title="pagila-3nf"  />
+<img src="./img/pagila-3nf.png" alt="pagila-3nf" title="pagila-3nf" width="500" height="400" />
 
 1. `psql -c "CREATE DATABASE pagila;"`
 2. `psql -d pagila -f source/pagila-schema.sql`
@@ -15,7 +15,7 @@ In this project, I'm going to extract the pagila data, transform to star schema 
 
 ## Extract, transform and load
 
-<img src="./img/pagila-dwh.png" alt="pagila-dwh" title="pagila-dwh" />
+<img src="./img/pagila-dwh.png" alt="pagila-dwh" title="pagila-dwh" width="420" height="390" />
 
 1. `psql -d pagila -f etl/create_dwh.sql`
 2. `psql -d pagila -f etl/etl.sql`
